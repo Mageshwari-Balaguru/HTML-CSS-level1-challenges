@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Fraunces';
+}
+:root{
+--Darkcyan: #3c8067;
+--Cream: #f2ebe3;
+--Verydarkblue: #1c232b;
+--Darkgrayishblue: #6c7289;
+--White: #ffffff;
+
+}
+body{
+    background-color:var(--Cream);
+}
+
+.container{
+    width:100%;
+    max-width:370px;
+    margin:0 auto;
+    margin-top:1.5rem;
+    background-color: var(--White);
+    border-radius: 10px;
+}
+#product_img img{
+    width:370px;
+    border-radius: 10px 10px 0 0;
+}
+.description{
+    padding:.75rem;
+
+}
+#img_caption p{
+    color:var(--Darkgrayishblue);
+    font-family: 'Montserrat';
+    letter-spacing: 5px;
+   
+}
+.description h1{
+    color:var(--Verydarkblue);
+    padding:.3rem .5rem;
+
+}
+.description p{
+    color:var(--Darkgrayishblue);
+    padding:0rem .5rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.description button{
+    padding:1rem;
+    width:20rem;
+    border:none;
+    background-color: var(--Darkcyan);
+    color:var(--White);
+    border-radius: 10px;
+    position:relative;
+    left:10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+button>img{
+   position:relative;
+   left:-10px;
+   top:3px;
+}
+.description .newprize{
+    font-size: 2rem;
+    color:var(--Darkcyan);
+    padding:1.25rem .5rem;
+    place-content: center;
+    font-weight: 700;
+}
+.description .oldprize{
+    font-size: .85rem;
+    color:var(--Darkgrayishblue);
+    padding:1rem;
+    place-content: center;
+    font-weight: 300;
+}
+
+/* media query */
+@media only screen and (min-width: 1040px) {
+
+    .container{
+        display:flex;
+        width:100%;
+        max-width:620px;
+        height:90%;
+        max-height: 900px;
+        margin:0 auto;
+        margin-top:5rem;
+        background-color: var(--White);
+        border-radius: 10px;
+    }
+    #product_img img{
+        width:250px;
+        height:400px;
+        border-radius: 10px 0 0 10px;
+    }
+    .description{
+        padding:1rem;
+    
+    }
+    #img_caption p{
+        color:var(--Darkgrayishblue);
+        font-family: 'Montserrat';
+        letter-spacing: 5px;
+        line-height: 3rem;
+       
+    }
+
+  }
+  .attribution{
+    font-size: .5rem;
+  }
