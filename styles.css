@@ -17,7 +17,6 @@ body{
 }
 
 .container{
-    width:100%;
     max-width:370px;
     margin:0 auto;
     margin-top:1.5rem;
@@ -45,25 +44,22 @@ body{
 }
 .description p{
     color:var(--Darkgrayishblue);
-    padding:0rem .5rem;
+    padding:0 .5rem;
     line-height: 1.5rem;
     font-size: 1rem;
     font-weight: 500;
 }
-.description button{
-    padding:1rem;
-    width:20rem;
-    border:none;
+.description a{
+    text-decoration: none;
     background-color: var(--Darkcyan);
     color:var(--White);
+    padding:.75rem 7rem;
+    font-weight: 500;
     border-radius: 10px;
-    position:relative;
-    left:10px;
-    font-weight: 700;
     letter-spacing: 1px;
 
 }
-button>img{
+a>img{
    position:relative;
    left:-10px;
    top:3px;
@@ -82,13 +78,18 @@ button>img{
     place-content: center;
     font-weight: 300;
 }
+.description a:hover{
+    cursor:pointer;
+    caret-color:#1c232b;
+    background-color:#194132;
+
+}
 
 /* media query */
 @media only screen and (min-width: 1040px) {
 
     .container{
         display:flex;
-        width:100%;
         max-width:620px;
         height:90%;
         max-height: 900px;
